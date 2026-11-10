@@ -2,13 +2,11 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const esquerda = [
- 
-  { label: "Início", href: "#inicio" },
-  { label: "Sobre o café", href: "#sobre-o-cafe" },
+  { label: "Produtora", href: "#produtora" },
+  { label: "Sítio", href: "#sitio" },
 ];
 const direita = [
-  { label: "Sobre nós", href: "#sobre-nos" },
-  
+  { label: "Cafés", href: "#cafes" },
   { label: "Contato", href: "#contato" },
 ];
 
@@ -44,8 +42,8 @@ export default function Header() {
         </nav>
 
         <a
-          href="#alo"
-          aria-label="Café Nossa Senhora — início"
+          href="#inicio"
+          aria-label="Café de Altitude da Serra da Mantiqueira — início"
           className="col-start-2 justify-self-center transition-transform duration-500 hover:-rotate-3 max-md:col-start-1 max-md:justify-self-start"
         >
           <Image

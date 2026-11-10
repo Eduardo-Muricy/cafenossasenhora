@@ -17,7 +17,7 @@ export default function Home() {
     <div className={`${titulo.variable} ${corpo.variable} font-sans`}>
       <Seo />
       <Header />
-      <main id="alo">
+      <main>
         <Inicio />
         <Produtora />
         <Sitio />

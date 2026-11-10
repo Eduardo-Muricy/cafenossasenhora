@@ -45,7 +45,7 @@ const variedades = [
 
 export default function Cafes() {
   return (
-    <section id="sobre-o-cafe" className="bg-creme px-6 py-16 md:py-24">
+    <section id="cafes" className="bg-creme px-6 py-16 md:py-24">
       <div className="mx-auto max-w-3xl">
         <h2 data-revelar className="text-center font-display text-4xl font-medium text-floresta md:text-5xl">
           Nossos cafés
