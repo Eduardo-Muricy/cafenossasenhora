@@ -4,7 +4,7 @@ export const SITE_URL = "https://www.nossasenhoradocafe.com";
 
 const titulo = "Nossa Senhora do Café | Café de Altitude da Serra da Mantiqueira";
 const descricao =
-  "Cafés especiais produzidos por mulher no Sítio Nossa Senhora do Café, em São Gonçalo do Sapucaí, Sul de Minas Gerais, a 1.100 m de altitude na Serra da Mantiqueira. Bourbon Vermelho, Catuaí Vermelho e Catiguá.";
+  "Cafés especiais produzidos por mulher no Sítio Nossa Senhora do Café, em São Gonçalo do Sapucaí, Sul de Minas Gerais, a 1.100 m de altitude na Serra da Mantiqueira. Catuaí Vermelho, Catucaí Amarelo, Catiguá, Arara e Paraíso MG2, de 86 a 87,5 pontos.";
 const imagem = `${SITE_URL}/og-image.jpg`;
 
 const jsonLd = {

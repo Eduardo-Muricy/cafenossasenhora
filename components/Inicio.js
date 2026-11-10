@@ -1,4 +1,3 @@
-import Aureola from "@/components/Aureola";
 import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
@@ -18,13 +17,12 @@ export default function Inicio() {
   ]);
 
   return (
-    <section id="inicio" className="relative overflow-hidden bg-aureola px-6 py-16 md:py-24">
-      <Aureola className="absolute top-0 left-1/2 w-[900px] max-w-none -translate-x-1/2 -translate-y-[38%] md:w-[1200px]" />
+    <section id="inicio" className="bg-floresta px-6 py-16 md:py-24">
       <div className="relative mx-auto max-w-[90rem] text-center">
-        <h1 data-revelar className="mx-auto max-w-5xl font-display text-4xl leading-tight font-medium text-floresta md:text-6xl lg:text-7xl">
+        <h1 data-revelar className="mx-auto max-w-5xl font-display text-4xl leading-tight font-medium text-aureola md:text-6xl lg:text-7xl">
           Café de Altitude da Serra da Mantiqueira
         </h1>
-        <p data-revelar style={{ "--atraso": "150ms" }} className="mt-6 flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-lg tracking-wide text-grao md:text-xl">
+        <p data-revelar style={{ "--atraso": "150ms" }} className="mt-6 flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-lg tracking-wide text-creme/80 md:text-xl">
           {["Sítio Nossa Senhora do Café", "São Gonçalo do Sapucaí", "Sul de Minas Gerais", "1.100 m"].map(
             (t, i) => (
               <span key={t} className="flex items-center gap-3">
@@ -35,7 +33,7 @@ export default function Inicio() {
           )}
         </p>
 
-        <div data-revelar style={{ "--atraso": "300ms" }} className="mx-auto mt-12 max-w-[63rem] overflow-hidden rounded-md shadow-[8px_8px_0_var(--kraft)] border border-cafe" ref={emblaRef}>
+        <div data-revelar style={{ "--atraso": "300ms" }} className="mx-auto mt-12 max-w-[63rem] overflow-hidden rounded-md border border-aureola/25" ref={emblaRef}>
           <div className="flex">
             {slides.map((s, i) => (
               <div key={s.src} className="relative aspect-video min-w-0 flex-[0_0_100%]">

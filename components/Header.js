@@ -35,7 +35,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className={`sticky top-0 z-50 bg-creme/95 text-cafe backdrop-blur transition-shadow duration-300 ${rolou ? "shadow-[0_6px_20px_-12px_rgba(40,30,25,0.45)]" : ""}`}>
+    <header className="sticky top-0 z-50 bg-creme/95 text-cafe backdrop-blur">
       <div className={`mx-auto grid max-w-6xl grid-cols-[1fr_auto_1fr] items-center px-6 transition-[height] duration-300 ${rolou ? "h-16" : "h-20"}`}>
         <nav aria-label="Principal, parte 1" className="hidden md:block">
           <ul className="flex justify-end gap-7 pr-10 font-display text-base tracking-wide">
