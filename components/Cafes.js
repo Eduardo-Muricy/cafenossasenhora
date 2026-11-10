@@ -8,11 +8,7 @@ const variedades = [
     pontos: "86",
     cor: "bg-bourbon",
     notas: ["Melado", "Frutas vermelhas", "Chocolate", "Castanha-do-Pará", "Toque cítrico"],
-    perfil: [
-      ["Corpo", "Cremoso"],
-      ["Acidez", "Cítrica equilibrada"],
-      ["Finalização", "Longa, doce e frutada"],
-    ],
+    
   },
   {
     nome: "Catucaí Amarelo",
@@ -24,7 +20,7 @@ const variedades = [
     nome: "Catiguá",
     pontos: "87",
     cor: "bg-oliva",
-    destaque: "Um café mais refrescante e diferente.",
+   
     notas: ["Melado", "Frutas tropicais", "Maçã verde", "Herbal", "Mel", "Jasmim", "Capim-limão"],
   },
   {
@@ -32,14 +28,14 @@ const variedades = [
     pontos: "86",
     cor: "bg-aureola",
     notas: ["Mascavo", "Frutas tropicais", "Málico", "Framboesa"],
-    prova: APAS,
+    
   },
   {
     nome: "Paraíso MG2",
     pontos: "87,5",
     cor: "bg-kraft",
     notas: ["Melaço", "Cítrico", "Frutas vermelhas", "Garapa", "Red berry"],
-    prova: APAS,
+   
   },
 ];
 

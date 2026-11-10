@@ -2,7 +2,7 @@ import Ornamento from "@/components/Ornamento";
 const canais = [
   { rotulo: "WhatsApp (MG)", valor: "(35) 99819-7716", href: "https://wa.me/5535998197716" },
   { rotulo: "Telefone / WhatsApp (SP)", valor: "(11) 95222-5806", href: "https://wa.me/5511952225806" },
-  { rotulo: "E-mail", valor: "sandrammcafe66@gmail.com", href: "mailto:sandrammcafe66@gmail.com" },
+  { rotulo: "E-mail", valor: "momoedapersonal@outlook.com", href: "mailto:momoedapersonal@outlook.com" },
   { rotulo: "Instagram", valor: "@cafe.nossasenhoradocafe", href: "https://instagram.com/cafe.nossasenhoradocafe" },
 ];
 
