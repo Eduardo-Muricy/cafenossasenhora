@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 220" width="100%" height="100%" fill="none">
+    <!-- Halo Background Rays -->
+    <ellipse cx="80" cy="85" rx="42" ry="65" fill="#E8D7B8" stroke="#1F1610" stroke-width="3"/>
+    
+    <!-- Rays lines -->
+    <path d="M 80 20 L 80 50 M 60 26 L 68 55 M 100 26 L 92 55 M 45 42 L 60 65 M 115 42 L 100 65 M 39 65 L 58 78 M 121 65 L 102 78 M 38 90 L 60 92 M 122 90 L 100 92 M 42 115 L 63 105 M 118 115 L 97 105" stroke="#1F1610" stroke-width="2.2" stroke-linecap="round"/>
+
+    <!-- Mantle Outline (Nossa Senhora) -->
+    <!-- Outer green mantle -->
+    <path d="M 80 48 C 65 48 52 75 48 115 C 45 140 55 152 65 155 L 95 155 C 105 152 115 140 112 115 C 108 75 95 48 80 48 Z" fill="#2E4A3B" stroke="#1F1610" stroke-width="3"/>
+
+    <!-- Mantle inner fold / golden lining -->
+    <path d="M 80 52 C 70 52 60 75 58 112 C 65 140 70 152 72 154 L 88 154 C 90 152 95 140 102 112 C 100 75 90 52 80 52 Z" fill="#D6BA85" stroke="#1F1610" stroke-width="1.8"/>
+
+    <!-- Center Coffee Bean / Hands prayer silhouette -->
+    <!-- Mantle Center dark opening -->
+    <path d="M 80 60 C 74 60 70 78 70 110 L 90 110 C 90 78 86 60 80 60 Z" fill="#241812"/>
+
+    <!-- Coffee Bean / Face & Hands -->
+    <!-- Head/halo inner -->
+    <ellipse cx="80" cy="74" rx="6" ry="8" fill="#F4E9D5" stroke="#1F1610" stroke-width="1.5"/>
+    <!-- Prayer hands / Coffee bean center slit -->
+    <path d="M 80 88 C 76 96 76 112 78 135 L 82 135 C 84 112 84 96 80 88 Z" fill="#C69A38" stroke="#1F1610" stroke-width="1.5"/>
+    <path d="M 80 90 Q 77 110 80 132" stroke="#1F1610" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Base stand / pedestal -->
+    <path d="M 52 153 C 65 150 95 150 108 153 L 104 160 L 56 160 Z" fill="#1F1610"/>
+
+    <!-- Ribbon / Leaf Details -->
+    <path d="M 72 163 L 88 163" stroke="#2E4A3B" stroke-width="3" stroke-linecap="round"/>
+</svg>

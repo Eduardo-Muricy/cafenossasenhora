@@ -1,0 +1,89 @@
+:root {
+    --verde: #2E4A3B;
+    --verde-escuro: #1E3328;
+    --fundo: #F8F5EE;
+    --linha: #E2D8C9;
+    --texto: #2A211B;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+    background: var(--fundo);
+    color: var(--texto);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 300;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+img { display: block; max-width: 100%; }
+
+a { color: var(--verde); }
+a:hover { color: var(--verde-escuro); }
+
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 1.5rem; }
+
+/* topo */
+.topo {
+    position: sticky; top: 0; z-index: 10;
+    background: rgba(248, 245, 238, 0.95);
+    border-bottom: 1px solid var(--linha);
+}
+.topo-in {
+    max-width: 960px;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 76px;
+}
+.marca { display: flex; align-items: center; gap: .75rem; text-decoration: none; }
+.marca img { height: 46px; width: auto; }
+.marca span {
+    font-family: "Cinzel", serif; font-weight: 500;
+    letter-spacing: .08em; font-size: .95rem; text-transform: uppercase;
+    color: var(--verde-escuro);
+}
+nav { display: flex; gap: 1.6rem; }
+nav a { text-decoration: none; font-size: .9rem; color: var(--texto); }
+nav a:hover { color: var(--verde); }
+
+/* capa */
+.capa { text-align: center; padding: 5rem 1.5rem 3rem; }
+.sobre-titulo {
+    text-transform: uppercase; letter-spacing: .18em;
+    font-size: .75rem; color: var(--verde); font-weight: 500; margin-bottom: 1rem;
+}
+h1, h2, h3 { font-family: "Cinzel", serif; font-weight: 500; color: var(--verde-escuro); line-height: 1.25; }
+h1 { font-size: clamp(1.9rem, 5vw, 2.8rem); margin-bottom: 1.2rem; }
+.lead { color: #5b4f45; }
+
+.foto-larga { max-width: 960px; margin: 0 auto 3rem; padding: 0 1.5rem; }
+.foto-larga img { width: 100%; aspect-ratio: 16 / 8; object-fit: cover; }
+
+/* texto corrido */
+.texto { padding-top: 3rem; padding-bottom: 1rem; }
+.texto h2 { font-size: 1.8rem; margin-bottom: 1.2rem; }
+.texto h3 { font-size: 1.15rem; margin: 1.8rem 0 .3rem; }
+.texto p { margin-bottom: 1.1rem; }
+.chamada { margin-top: 2rem; }
+
+.duas-fotos { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.5rem; }
+.duas-fotos img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+
+.foto-texto { margin-top: 1.5rem; }
+.foto-texto img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+
+.contato { padding-bottom: 4rem; }
+
+footer {
+    border-top: 1px solid var(--linha);
+    padding: 2rem 0; text-align: center;
+    font-size: .8rem; color: #7a6d62;
+}
+
+@media (max-width: 640px) {
+    nav { display: none; }
+    .topo-in { justify-content: center; }
+    .duas-fotos { grid-template-columns: 1fr; }
+}

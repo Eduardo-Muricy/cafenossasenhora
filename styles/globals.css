@@ -1,26 +1,112 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --verde-oliva: #4e6449;
+  --amarelo-aureola: #fde4a3;
+  --marrom-grao: #7a6245;
+  --creme: #fff7cf;
+  --preto-cafe: #281e19;
+  --verde-institucional: #3b523f;
+  --kraft: #c8a882;
+  --bourbon: #844445;
+  --mostarda: #c6923c;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-oliva: var(--verde-oliva);
+  --color-aureola: var(--amarelo-aureola);
+  --color-grao: var(--marrom-grao);
+  --color-creme: var(--creme);
+  --color-cafe: var(--preto-cafe);
+  --color-floresta: var(--verde-institucional);
+  --color-kraft: var(--kraft);
+  --color-bourbon: var(--bourbon);
+  --color-mostarda: var(--mostarda);
+  --font-sans: var(--font-corpo);
+  --font-display: var(--font-titulo);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--creme);
+  color: var(--preto-cafe);
+  font-family: var(--font-corpo), system-ui, sans-serif;
+}
+
+::selection {
+  background: var(--mostarda);
+  color: var(--preto-cafe);
+}
+
+/* Link do menu: um grão de café surge sob o item */
+.nav-link {
+  position: relative;
+  padding: 0.5rem 0.1rem;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 6px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--mostarda);
+  transform: translateX(-50%) scale(0);
+  transition: transform 0.25s cubic-bezier(0.3, 1.6, 0.5, 1);
+}
+.nav-link:hover::after,
+.nav-link:focus-visible::after {
+  transform: translateX(-50%) scale(1);
+}
+
+/* ---------- Detalhes visuais (teste) ---------- */
+
+/* Textura de papel kraft sobre o site inteiro */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+  opacity: 0.07;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.48 0 0 0 0 0.38 0 0 0 0 0.27 0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Auréola girando */
+.aureola {
+  animation: girar 160s linear infinite;
+}
+@keyframes girar {
+  to { transform: rotate(360deg); }
+}
+
+/* Revelar ao rolar */
+@media (prefers-reduced-motion: no-preference) {
+  [data-revelar] {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.9s ease, transform 0.9s cubic-bezier(0.2, 0.7, 0.2, 1);
+    transition-delay: var(--atraso, 0ms);
+  }
+  [data-revelar].revelado {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .aureola { animation: none; }
+}
+
+/* Zoom suave nas fotos */
+.foto-zoom img {
+  transition: transform 1.2s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.foto-zoom:hover img {
+  transform: scale(1.04);
 }
