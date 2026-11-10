@@ -17,7 +17,7 @@ export default function Inicio() {
   ]);
 
   return (
-    <section id="inicio" className="bg-aureola px-6 py-16 md:py-24">
+    <section id="inicio" className="bg-creme px-6 py-16 md:py-24">
       <div className="relative mx-auto max-w-[90rem] text-center">
         <h1 data-revelar className="mx-auto max-w-5xl font-display text-4xl leading-tight font-medium text-floresta md:text-6xl lg:text-7xl">
           Café de Altitude da Serra da Mantiqueira

@@ -6,7 +6,7 @@ const foto = { src: "sitio-paisagem.jpg", alt: "Sítio Nossa Senhora do Café, S
 
 export default function Sitio() {
   return (
-    <section id="sitio" className="bg-aureola px-6 py-16 md:py-24">
+    <section id="sitio" className="bg-creme px-6 py-16 md:py-24">
       <div className="mx-auto max-w-3xl">
         <h2 data-revelar className="text-center font-display text-4xl font-medium text-floresta md:text-5xl">
           O sítio

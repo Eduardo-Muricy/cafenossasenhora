@@ -6,7 +6,7 @@ const esquerda = [
   { label: "Sítio", href: "#sitio" },
 ];
 const direita = [
-  { label: "Cafés", href: "#cafes" },
+  { label: "Nossos Cafés", href: "#cafes" },
   { label: "Contato", href: "#contato" },
 ];
 
@@ -33,7 +33,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 bg-creme/95 text-cafe backdrop-blur">
+    <header className="sticky top-0 z-50 bg-floresta/95 text-aureola backdrop-blur">
       <div className={`mx-auto grid max-w-6xl grid-cols-[1fr_auto_1fr] items-center px-6 transition-[height] duration-300 ${rolou ? "h-16" : "h-20"}`}>
         <nav aria-label="Principal, parte 1" className="hidden md:block">
           <ul className="flex justify-end gap-7 pr-10 font-display text-base tracking-wide">
@@ -71,21 +71,17 @@ export default function Header() {
         >
           <span className="sr-only">{aberto ? "Fechar menu" : "Abrir menu"}</span>
           <span aria-hidden className="flex w-8 flex-col gap-1.5">
-            <span className={`h-0.5 bg-cafe transition ${aberto ? "translate-y-2 rotate-45" : ""}`} />
-            <span className={`h-0.5 bg-cafe transition ${aberto ? "opacity-0" : ""}`} />
-            <span className={`h-0.5 bg-cafe transition ${aberto ? "-translate-y-2 -rotate-45" : ""}`} />
+            <span className={`h-0.5 bg-aureola transition ${aberto ? "translate-y-2 rotate-45" : ""}`} />
+            <span className={`h-0.5 bg-aureola transition ${aberto ? "opacity-0" : ""}`} />
+            <span className={`h-0.5 bg-aureola transition ${aberto ? "-translate-y-2 -rotate-45" : ""}`} />
           </span>
         </button>
       </div>
 
-      {/* Filete duplo, como o contorno de um vitral */}
-      <div aria-hidden className="mx-auto max-w-6xl px-6">
-        <div className="h-px bg-cafe" />
-        <div className="mt-[3px] h-px bg-mostarda" />
-      </div>
-
+      
+     
       {aberto && (
-        <nav id="menu-mobile" aria-label="Principal" className="border-b border-cafe bg-aureola md:hidden">
+        <nav id="menu-mobile" aria-label="Principal" className="border-b border-cafe bg-aureola text-cafe md:hidden">
           <ul className="flex flex-col items-center gap-5 py-8 font-display text-xl tracking-wide">
             <Links itens={[...esquerda, ...direita]} onClick={fechar} />
           </ul>
