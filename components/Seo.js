@@ -15,7 +15,7 @@ const jsonLd = {
   logo: `${SITE_URL}/icon.png`,
   image: imagem,
   slogan: "Cafés especiais · Produzido por mulher",
-  founder: { "@type": "Person", name: "Sandra Momoeda" },
+  founder: { "@type": "Person", name: "Sandra Maria Momoeda" },
   email: "momoedapersonal@outlook.com",
   address: {
     "@type": "PostalAddress",

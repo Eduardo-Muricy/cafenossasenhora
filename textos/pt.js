@@ -3,7 +3,7 @@ const pt = {
   seo: {
     titulo: "Nossa Senhora do Café | Café de Altitude da Serra da Mantiqueira",
     descricao:
-      "Cafés especiais produzidos por mulher no Sítio Nossa Senhora do Café, em São Gonçalo do Sapucaí, Sul de Minas Gerais, entre 1.100 e 1.250 m de altitude na Serra da Mantiqueira. Catuaí Vermelho, Catucaí Amarelo, Catiguá, Arara, Paraíso MG2 e IAC 125 RN, de 84 a 87,5 pontos.",
+      "Cafés especiais produzidos por mulher no Sítio Nossa Senhora do Café, em São Gonçalo do Sapucaí, Sul de Minas Gerais, entre 1.100 e 1.250 m de altitude na Serra da Mantiqueira. Catuaí Vermelho, Catucaí Amarelo, Catiguá, Bourbon Vermelho, Arara, Paraíso MG2 e IAC 125 RN, de 84 a 87,5 pontos.",
     ogAlt: "Cafezais do Sítio Nossa Senhora do Café na Serra da Mantiqueira",
     ogLocale: "pt_BR",
   },
@@ -64,13 +64,15 @@ const pt = {
     ],
     pontos: "pontos",
     notasSensoriais: "Notas sensoriais",
+    // Textos conforme as embalagens. A cor do grão segue a posição (ver components/Cafes.js)
     variedades: [
-      { nome: "Catuaí Vermelho", pontos: "86", notas: ["Melado", "Frutas vermelhas", "Chocolate", "Castanha-do-Pará", "Toque cítrico"] },
-      { nome: "Catucaí Amarelo", pontos: "87", notas: ["Mel", "Açúcar mascavo", "Laranja", "Maracujá", "Frutas amarelas", "Chá verde", "Toque floral", "Limão-siciliano"] },
-      { nome: "Catiguá", pontos: "87", notas: ["Melado", "Frutas tropicais", "Maçã verde", "Herbal", "Mel", "Jasmim", "Capim-limão"] },
-      { nome: "Arara", pontos: "86", notas: ["Mascavo", "Frutas tropicais", "Málico", "Framboesa"] },
-      { nome: "Paraíso MG2", pontos: "87,5", notas: ["Melaço", "Cítrico", "Frutas vermelhas", "Garapa", "Red berry"] },
-      { nome: "IAC 125 RN", destaque: "Café Uva", pontos: "84", notas: ["Nibs de cacau", "Especiarias", "Mascavo", "Chocolate"] },
+      { nome: "Catuaí Vermelho", pontos: "86", notas: ["Melado", "Frutas Vermelhas", "Chocolate", "Castanha-do-Pará", "Toque Cítrico"] },
+      { nome: "Catucaí Amarelo", pontos: "87", notas: ["Mel", "Açúcar Mascavo", "Laranja", "Maracujá", "Frutas Amarelas", "Chá Verde", "Toque Floral", "Limão Siciliano"] },
+      { nome: "Catiguá", pontos: "87", notas: ["Melado", "Frutas Tropicais", "Maçã Verde", "Herbal", "Mel", "Jasmim", "Capim Limão"] },
+      { nome: "Bourbon Vermelho", pontos: "86,75", notas: ["Amora Roxa", "Frutas Silvestres", "Frutas Vermelhas", "Vinho", "Melado"] },
+      { nome: "Arara", pontos: "86", notas: ["Mascavo", "Frutas Tropicais", "Málico", "Framboesa"] },
+      { nome: "Paraíso MG2", pontos: "87,5", notas: ["Melaço", "Cítrico", "Frutas Vermelhas", "Garapa"] },
+      { nome: "IAC 125 RN", destaque: "Café Uva", pontos: "84", notas: ["Nibs Cacau", "Especiarias", "Mascavo", "Chocolate"] },
     ],
     chamada: "Para cotar preço, solicitar amostras ou saber a disponibilidade atual,",
     chamadaLink: "fale com a gente",

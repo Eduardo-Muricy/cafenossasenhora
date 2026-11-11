@@ -3,7 +3,7 @@ const en = {
   seo: {
     titulo: "Nossa Senhora do Café | High-Altitude Coffee from the Serra da Mantiqueira",
     descricao:
-      "Women-grown specialty coffee from Sítio Nossa Senhora do Café in São Gonçalo do Sapucaí, southern Minas Gerais, grown between 1,100 and 1,250 m in the Serra da Mantiqueira. Red Catuaí, Yellow Catucaí, Catiguá, Arara, Paraíso MG2 and IAC 125 RN, scoring 84 to 87.5 points.",
+      "Women-grown specialty coffee from Sítio Nossa Senhora do Café in São Gonçalo do Sapucaí, southern Minas Gerais, grown between 1,100 and 1,250 m in the Serra da Mantiqueira. Red Catuaí, Yellow Catucaí, Catiguá, Red Bourbon, Arara, Paraíso MG2 and IAC 125 RN, scoring 84 to 87.5 points.",
     ogAlt: "Coffee fields at Sítio Nossa Senhora do Café in the Serra da Mantiqueira",
     ogLocale: "en_US",
   },
@@ -50,8 +50,7 @@ const en = {
   sitio: {
     titulo: "The Farm",
     paragrafos: [
-      "Sítio Nossa Senhora do Café is located in the District of Ferreiras, in São Gonçalo do Sapucaí, southern Minas Gerais, within the mountains of the Serra da Mantiqueira—a region officially recognized with a Denomination of Origin (DO), which certifies the exclusivity and unique typicity of our terroir. The coffee plantations sit between 1,100 and 1,250 meters of altitude, where the mountain climate—featuring sunny days and cool nights—favors a slower maturation and yields specialty coffees with incredible sensory profiles.",
-      "We are a family-owned farm producing on a small scale, with rigorous monitoring of every single step, always striving for conscious and sustainable land management. We are currently transitioning our farm into an agroforestry system, seamlessly integrating our crops into the local ecosystem.",
+      "Sítio Nossa Senhora do Café is located in the District of Ferreiras, in São Gonçalo do Sapucaí, southern Minas Gerais, within the mountains of the Serra da Mantiqueira—a region officially recognized with a Denomination of Origin (DO), Our terroir, climate, and altitude gift us with exceptional coffees, globally recognized as a specialty coffee region.",
     ],
     foto: "Sítio Nossa Senhora do Café, Serra da Mantiqueira",
   },
@@ -65,13 +64,15 @@ const en = {
     pontos: "points",
     notasSensoriais: "Tasting notes",
     // Mesma ordem de pt.js (a cor do grão é definida pela posição)
+    // Texts as on the packaging. Same order as pt.js (bean color follows position)
     variedades: [
-      { nome: "Red Catuaí", pontos: "86", notas: ["Cane syrup", "Red fruits", "Chocolate", "Brazil nut", "Hint of citrus"] },
-      { nome: "Yellow Catucaí", pontos: "87", notas: ["Honey", "Brown sugar", "Orange", "Passion fruit", "Yellow fruits", "Green tea", "Floral hint", "Sicilian lemon"] },
-      { nome: "Catiguá", pontos: "87", notas: ["Cane syrup", "Tropical fruits", "Green apple", "Herbal", "Honey", "Jasmine", "Lemongrass"] },
-      { nome: "Arara", pontos: "86", notas: ["Brown sugar", "Tropical fruits", "Malic", "Raspberry"] },
-      { nome: "Paraíso MG2", pontos: "87.5", notas: ["Molasses", "Citrus", "Red fruits", "Sugarcane juice", "Red berry"] },
-      { nome: "IAC 125 RN", destaque: "“Café Uva” (Grape Coffee)", pontos: "84", notas: ["Cocoa nibs", "Spices", "Brown sugar", "Chocolate"] },
+      { nome: "Red Catuaí", pontos: "86", notas: ["Molasses", "Red Berries", "Chocolate", "Brazil Nut", "Citrus Notes"] },
+      { nome: "Yellow Catucaí", pontos: "87", notas: ["Honey", "Brown Sugar", "Orange", "Passion Fruit", "Yellow Fruits", "Green Tea", "Floral", "Lemon"] },
+      { nome: "Catiguá", pontos: "87", notas: ["Molasses", "Tropical Fruits", "Green Apple", "Herbal", "Honey", "Jasmine", "Lemongrass"] },
+      { nome: "Red Bourbon", pontos: "86.75", notas: ["Blackberry", "Wild Berries", "Red Berries", "Wine", "Molasses"] },
+      { nome: "Arara", pontos: "86", notas: ["Brown Sugar", "Tropical Fruits", "Malic Acidity", "Raspberry"] },
+      { nome: "Paraíso MG2", pontos: "87.5", notas: ["Molasses", "Citrus", "Red Berries", "Sugarcane Juice"] },
+      { nome: "IAC 125 RN", destaque: "Grape Coffee", pontos: "84", notas: ["Cacao Nibs", "Warm Spices", "Brown Sugar", "Chocolate"] },
     ],
     chamada: "To request a price quote, samples, or current availability,",
     chamadaLink: "get in touch",

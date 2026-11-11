@@ -3,7 +3,7 @@ import Ornamento from "@/components/Ornamento";
 import { useTextos } from "@/textos";
 
 // Cor do grão de cada variedade, na mesma ordem das listas em /textos
-const cores = ["bg-bourbon", "bg-mostarda", "bg-oliva", "bg-aureola", "bg-kraft", "bg-grao"];
+const cores = ["bg-bourbon", "bg-mostarda", "bg-oliva", "bg-cafe", "bg-aureola", "bg-kraft", "bg-grao"];
 
 export default function Cafes() {
   const t = useTextos().cafes;
