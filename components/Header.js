@@ -1,14 +1,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
-
-const esquerda = [
-  { label: "Produtora", href: "#produtora" },
-  { label: "Sítio", href: "#sitio" },
-];
-const direita = [
-  { label: "Nossos Cafés", href: "#cafes" },
-  { label: "Contato", href: "#contato" },
-];
+import { useTextos } from "@/textos";
+import SeletorIdioma from "@/components/SeletorIdioma";
 
 function Links({ itens, onClick, className }) {
   return itens.map((i) => (
@@ -21,9 +14,19 @@ function Links({ itens, onClick, className }) {
 }
 
 export default function Header() {
+  const t = useTextos().nav;
   const [aberto, setAberto] = useState(false);
   const fechar = () => setAberto(false);
   const [rolou, setRolou] = useState(false);
+
+  const esquerda = [
+    { label: t.produtora, href: "#produtora" },
+    { label: t.sitio, href: "#sitio" },
+  ];
+  const direita = [
+    { label: t.cafes, href: "#cafes" },
+    { label: t.contato, href: "#contato" },
+  ];
 
   useEffect(() => {
     const aoRolar = () => setRolou(window.scrollY > 24);
@@ -43,7 +46,7 @@ export default function Header() {
 
         <a
           href="#inicio"
-          aria-label="Café de Altitude da Serra da Mantiqueira — início"
+          aria-label={t.logo}
           className="col-start-2 justify-self-center transition-transform duration-500 hover:-rotate-3 max-md:col-start-1 max-md:justify-self-start"
         >
           <Image
@@ -56,30 +59,32 @@ export default function Header() {
           />
         </a>
 
-        <nav aria-label="Principal, parte 2" className="hidden md:block">
-          <ul className="flex gap-7 pl-10 font-display text-base tracking-wide">
-            <Links itens={direita} />
-          </ul>
-        </nav>
+        <div className="col-start-3 flex items-center justify-end gap-4 md:justify-between">
+          <nav aria-label="Principal, parte 2" className="hidden md:block">
+            <ul className="flex gap-7 pl-10 font-display text-base tracking-wide">
+              <Links itens={direita} />
+            </ul>
+          </nav>
 
-        <button
-          type="button"
-          className="col-start-3 justify-self-end md:hidden"
-          aria-expanded={aberto}
-          aria-controls="menu-mobile"
-          onClick={() => setAberto(!aberto)}
-        >
-          <span className="sr-only">{aberto ? "Fechar menu" : "Abrir menu"}</span>
-          <span aria-hidden className="flex w-8 flex-col gap-1.5">
-            <span className={`h-0.5 bg-aureola transition ${aberto ? "translate-y-2 rotate-45" : ""}`} />
-            <span className={`h-0.5 bg-aureola transition ${aberto ? "opacity-0" : ""}`} />
-            <span className={`h-0.5 bg-aureola transition ${aberto ? "-translate-y-2 -rotate-45" : ""}`} />
-          </span>
-        </button>
+          <SeletorIdioma />
+
+          <button
+            type="button"
+            className="md:hidden"
+            aria-expanded={aberto}
+            aria-controls="menu-mobile"
+            onClick={() => setAberto(!aberto)}
+          >
+            <span className="sr-only">{aberto ? t.fecharMenu : t.abrirMenu}</span>
+            <span aria-hidden className="flex w-8 flex-col gap-1.5">
+              <span className={`h-0.5 bg-aureola transition ${aberto ? "translate-y-2 rotate-45" : ""}`} />
+              <span className={`h-0.5 bg-aureola transition ${aberto ? "opacity-0" : ""}`} />
+              <span className={`h-0.5 bg-aureola transition ${aberto ? "-translate-y-2 -rotate-45" : ""}`} />
+            </span>
+          </button>
+        </div>
       </div>
 
-      
-     
       {aberto && (
         <nav id="menu-mobile" aria-label="Principal" className="border-b border-cafe bg-aureola text-cafe md:hidden">
           <ul className="flex flex-col items-center gap-5 py-8 font-display text-xl tracking-wide">

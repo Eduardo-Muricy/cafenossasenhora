@@ -7,12 +7,14 @@ import Sitio from "@/components/Sitio";
 import Cafes from "@/components/Cafes";
 import Contato from "@/components/Contato";
 import useRevelar from "@/components/useRevelar";
+import { useTextos } from "@/textos";
 
 const titulo = Cinzel({ variable: "--font-titulo", subsets: ["latin"], weight: ["400", "500", "600"] });
 const corpo = Plus_Jakarta_Sans({ variable: "--font-corpo", subsets: ["latin"], weight: ["300", "400", "500", "600"] });
 
 export default function Home() {
   useRevelar();
+  const t = useTextos();
   return (
     <div className={`${titulo.variable} ${corpo.variable} font-sans`}>
       <Seo />
@@ -25,7 +27,7 @@ export default function Home() {
         <Contato />
       </main>
       <footer className="bg-cafe px-6 py-6 text-center text-sm font-light text-kraft">
-        Nossa Senhora do Café · Cafés especiais · Serra da Mantiqueira
+        {t.rodape}
       </footer>
     </div>
   );
