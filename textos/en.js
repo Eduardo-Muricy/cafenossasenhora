@@ -23,11 +23,12 @@ const en = {
     titulo: "High-Altitude Coffee from the Serra da Mantiqueira",
     subtitulo: ["Sítio Nossa Senhora do Café", "São Gonçalo do Sapucaí", "Southern Minas Gerais", "1,100–1,250 m"],
     fotos: [
-      "Ripe coffee cherries on the branch",
-      "Coffee harvest",
-      "Coffee tree blossoms",
-      "Coffee drying on the patio",
-      "A cup of coffee",
+      "Cluster of ripe red coffee cherries on the branch",
+      "Coffee fields in the mountains of the Serra da Mantiqueira",
+      "Cluster of ripe yellow coffee cherries on the branch",
+      "Sieve full of freshly picked coffee cherries",
+      "View of the farm through a window, with the mountains behind",
+      "Coffee branch laden with red cherries",
     ],
   },
 
@@ -40,7 +41,7 @@ const en = {
     ],
     fotos: [
       "Sandra Momoeda next to a coffee tree full of cherries",
-      "Sandra Momoeda on the drying patio",
+      "Sandra Momoeda holding two bags of her coffee in the coffee field",
       "Sandra Momoeda and an elderly woman tending coffee seedlings",
       "Sandra Momoeda working in the coffee field",
       "Sandra Momoeda welcoming visitors to the coffee field",
@@ -52,7 +53,11 @@ const en = {
     paragrafos: [
       "Sítio Nossa Senhora do Café is located in the District of Ferreiras, in São Gonçalo do Sapucaí, southern Minas Gerais, within the mountains of the Serra da Mantiqueira—a region officially recognized with a Denomination of Origin (DO), Our terroir, climate, and altitude gift us with exceptional coffees, globally recognized as a specialty coffee region.",
     ],
-    foto: "Sítio Nossa Senhora do Café, Serra da Mantiqueira",
+    fotos: [
+      "The farm's coffee fields in the mountains of the Serra da Mantiqueira",
+      "View of the farm through a window, with the mountains behind",
+      "Visitors gathered in front of the farmhouse",
+    ],
   },
 
   cafes: {

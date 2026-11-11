@@ -6,11 +6,11 @@ import { useTextos } from "@/textos";
 
 const pasta = "/site cafe nossa senhora/";
 const fotos = [
-  { src: "IMG_2353.JPG" },
-  { src: "sandra-lavoura.jpg", pos: "object-[43%_50%]" },
-  { src: "IMG_5124.jpeg" },
-  { src: "IMG_3378.JPG" },
-  { src: "IMG_3882.JPG" },
+  { src: pasta + "IMG_2353.JPG" },
+  { src: "/Cafes/IMG_2464.JPG", pos: "object-[50%_30%]" },
+  { src: pasta + "IMG_5124.jpeg" },
+  { src: pasta + "IMG_3378.JPG" },
+  { src: pasta + "IMG_3882.JPG" },
 ];
 
 export default function Produtora() {
@@ -39,7 +39,7 @@ export default function Produtora() {
               <div key={f.src} className="min-w-0 flex-[0_0_80%] pl-4 sm:flex-[0_0_50%] md:flex-[0_0_33.333%]">
                 <div className="foto-zoom relative aspect-3/4 overflow-hidden rounded-md border border-cafe">
                   <Image
-                    src={pasta + f.src}
+                    src={f.src}
                     alt={t.fotos[i]}
                     fill
                     sizes="(min-width: 768px) 256px, (min-width: 640px) 50vw, 80vw"

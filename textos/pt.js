@@ -23,11 +23,12 @@ const pt = {
     titulo: "Café de Altitude da Serra da Mantiqueira",
     subtitulo: ["Sítio Nossa Senhora do Café", "São Gonçalo do Sapucaí", "Sul de Minas Gerais", "1100-1250m"],
     fotos: [
-      "Grãos de café maduros no pé",
-      "Colheita do café",
-      "Flores do cafeeiro",
-      "Café secando no terreiro",
-      "Xícara de café",
+      "Cacho de café vermelho maduro no pé",
+      "Cafezais nas montanhas da Serra da Mantiqueira",
+      "Cacho de café amarelo maduro no pé",
+      "Peneira cheia de café cereja recém-colhido",
+      "Vista do sítio pela janela, com a serra ao fundo",
+      "Galho de cafeeiro carregado de frutos vermelhos",
     ],
   },
 
@@ -40,7 +41,7 @@ const pt = {
     ],
     fotos: [
       "Sandra Momoeda ao lado de um cafeeiro carregado",
-      "Sandra Momoeda no terreiro de secagem",
+      "Sandra Momoeda segurando dois pacotes do seu café no cafezal",
       "Sandra Momoeda e uma senhora cuidando de mudas de café",
       "Sandra Momoeda fazendo o manejo da lavoura",
       "Sandra Momoeda recebendo visitantes no cafezal",
@@ -53,7 +54,11 @@ const pt = {
       "O Sítio Nossa Senhora do Café fica no Distrito dos Ferreiras, em São Gonçalo do Sapucaí, no Sul de Minas Gerais, nas montanhas da Serra da Mantiqueira — uma região reconhecida com Denominação de Origem (DO). Nosso terroir, clima e altitude nos presenteiam com cafés de excelência, mundialmente reconhecidos como região de cafés especiais. Os cafezais estão entre 1.100 e 1.250 metros de altitude, onde o clima de serra, com dias de sol e noites frias, favorece uma maturação mais lenta e cafés especiais com perfis sensoriais incríveis.",
       "Fazemos parte da agricultura familiar e produzimos em pequena escala, com acompanhamento rigoroso de cada etapa, buscando sempre o manejo consciente e sustentável da propriedade. Atualmente, estamos em processo de transição para transformar nosso sítio em uma agrofloresta, integrando a lavoura ao ecossistema local.",
     ],
-    foto: "Sítio Nossa Senhora do Café, Serra da Mantiqueira",
+    fotos: [
+      "Cafezais do sítio nas montanhas da Serra da Mantiqueira",
+      "Vista do sítio pela janela, com a serra ao fundo",
+      "Visitantes reunidos em frente à casa do sítio",
+    ],
   },
 
   cafes: {

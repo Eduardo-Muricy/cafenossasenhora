@@ -1,12 +1,21 @@
 import Ornamento from "@/components/Ornamento";
 import Image from "next/image";
+import useEmblaCarousel from "embla-carousel-react";
+import Autoplay from "embla-carousel-autoplay";
 import { useTextos } from "@/textos";
 
-const pasta = "/site cafe nossa senhora/";
-const foto = "sitio-paisagem.jpg";
+// Fotos oficiais do sítio (public/sitio)
+const fotos = [
+  { src: "/sitio/IMG_8999.jpeg", pos: "object-[50%_58%]" },
+  { src: "/sitio/IMG_4065.JPG", pos: "object-[50%_55%]" },
+  { src: "/sitio/3.JPG", pos: "object-center" },
+];
 
 export default function Sitio() {
   const t = useTextos().sitio;
+  const [emblaRef] = useEmblaCarousel({ loop: true }, [
+    Autoplay({ delay: 4000, stopOnInteraction: false }),
+  ]);
   return (
     <section id="sitio" className="bg-creme px-6 py-16 md:py-24">
       <div className="mx-auto max-w-3xl">
@@ -21,14 +30,20 @@ export default function Sitio() {
           ))}
         </div>
 
-        <div data-revelar className="foto-zoom relative mt-12 aspect-video overflow-hidden rounded-md border border-cafe">
-          <Image
-            src={pasta + foto}
-            alt={t.foto}
-            fill
-            sizes="(min-width: 768px) 768px, 100vw"
-            className="object-cover"
-          />
+        <div data-revelar className="mt-12 overflow-hidden rounded-md border border-cafe" ref={emblaRef}>
+          <div className="flex">
+            {fotos.map((f, i) => (
+              <div key={f.src} className="relative aspect-4/3 min-w-0 flex-[0_0_100%]">
+                <Image
+                  src={f.src}
+                  alt={t.fotos[i]}
+                  fill
+                  sizes="(min-width: 768px) 768px, 100vw"
+                  className={`object-cover ${f.pos}`}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

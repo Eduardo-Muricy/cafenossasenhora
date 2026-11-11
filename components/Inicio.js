@@ -3,8 +3,15 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { useTextos } from "@/textos";
 
-const pasta = "/site cafe nossa senhora/";
-const slides = ["graos-maduros.jpg", "colheita-cafe.jpg", "flores-cafe.jpg", "terreiro-secagem.jpg", "xicara-cafe.jpg"];
+// Fotos oficiais (public/Cafes e public/sitio). "pos" ajusta o enquadramento no 16:9.
+const slides = [
+  { src: "/Cafes/1.JPG", pos: "object-[50%_42%]" },
+  { src: "/sitio/IMG_8999.jpeg", pos: "object-[50%_58%]" },
+  { src: "/Cafes/IMG_2303.JPG", pos: "object-[50%_55%]" },
+  { src: "/Cafes/0.JPG", pos: "object-[50%_60%]" },
+  { src: "/sitio/IMG_4065.JPG", pos: "object-[50%_55%]" },
+  { src: "/Cafes/IMG_2878.JPG", pos: "object-[50%_50%]" },
+];
 
 export default function Inicio() {
   const t = useTextos().inicio;
@@ -32,14 +39,14 @@ export default function Inicio() {
         <div data-revelar style={{ "--atraso": "300ms" }} className="mx-auto mt-12 max-w-[63rem] overflow-hidden rounded-md border border-cafe" ref={emblaRef}>
           <div className="flex">
             {slides.map((s, i) => (
-              <div key={s} className="relative aspect-video min-w-0 flex-[0_0_100%]">
+              <div key={s.src} className="relative aspect-video min-w-0 flex-[0_0_100%]">
                 <Image
-                  src={pasta + s}
+                  src={s.src}
                   alt={t.fotos[i]}
                   fill
                   sizes="(min-width: 1008px) 1008px, 100vw"
                   priority={i === 0}
-                  className="object-cover"
+                  className={`object-cover ${s.pos}`}
                 />
               </div>
             ))}
