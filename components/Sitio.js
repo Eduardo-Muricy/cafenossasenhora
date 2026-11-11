@@ -30,7 +30,7 @@ export default function Sitio() {
           ))}
         </div>
 
-        <div data-revelar className="mt-12 overflow-hidden rounded-md border border-cafe" ref={emblaRef}>
+        <div data-revelar className="mt-12 overflow-hidden rounded-md" ref={emblaRef}>
           <div className="flex">
             {fotos.map((f, i) => (
               <div key={f.src} className="relative aspect-4/3 min-w-0 flex-[0_0_100%]">

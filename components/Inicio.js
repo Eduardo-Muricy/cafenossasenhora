@@ -36,7 +36,7 @@ export default function Inicio() {
           )}
         </p>
 
-        <div data-revelar style={{ "--atraso": "300ms" }} className="mx-auto mt-12 max-w-[63rem] overflow-hidden rounded-md border border-cafe" ref={emblaRef}>
+        <div data-revelar style={{ "--atraso": "300ms" }} className="mx-auto mt-12 max-w-[63rem] overflow-hidden rounded-md" ref={emblaRef}>
           <div className="flex">
             {slides.map((s, i) => (
               <div key={s.src} className="relative aspect-video min-w-0 flex-[0_0_100%]">

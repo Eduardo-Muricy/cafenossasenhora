@@ -37,7 +37,7 @@ export default function Produtora() {
           <div className="-ml-4 flex">
             {fotos.map((f, i) => (
               <div key={f.src} className="min-w-0 flex-[0_0_80%] pl-4 sm:flex-[0_0_50%] md:flex-[0_0_33.333%]">
-                <div className="foto-zoom relative aspect-3/4 overflow-hidden rounded-md border border-cafe">
+                <div className="foto-zoom relative aspect-3/4 overflow-hidden rounded-md">
                   <Image
                     src={f.src}
                     alt={t.fotos[i]}
